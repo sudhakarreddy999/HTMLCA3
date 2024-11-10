@@ -1,0 +1,129 @@
+/* Header, Logo, and Navigation */
+.header {
+    background-color: #3a3a3a;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 140px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-right: 1em;
+}
+
+.header h1 {
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-left: 730px;
+    
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    margin-top: -0.5em;
+}
+
+.header nav a {
+    color: #f4f4f9;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.header nav a:hover {
+    background-color: #ff6b6b;
+}
+
+/* Products Section */
+.products-section {
+    padding: 4em 1em;
+    text-align: center;
+    background-color: #f4f4f9;
+}
+
+.products-section h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+    margin-top: 2em;
+}
+
+/* Product Cards */
+.product-card {
+    background: #fff;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-card a {
+    text-decoration: none;
+    color: #fff;
+}
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.product-card h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.product-card p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 1em;
+}
+
+.btn-add {
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 0.8em 1.5em;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-add:hover {
+    background-color: #ffa07a;
+}
+
+/* Footer */
+.footer {
+    padding: 1em;
+    background-color: #3a3a3a;
+    color: #f4f4f9;
+    text-align: center;
+    font-size: 0.9em;
+}

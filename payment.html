@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermarket Payment</title>
+    <link rel="stylesheet" href="payments.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./images/logo.jpeg" alt="Supermarket Logo">
+            <h1>Basket Big</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="payment-container">
+            <h2>Payment Information</h2>
+            <form action="/submit-payment" method="POST">
+                <div class="form-group">
+                    <label for="card-name">Cardholder Name</label>
+                    <input type="text" id="card-name" name="card-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="card-number">Card Number</label>
+                    <input type="text" id="card-number" name="card-number" required maxlength="16" pattern="\d{16}" title="Enter a valid 16-digit card number">
+                </div>
+                <div class="form-group">
+                    <label for="expiry-date">Expiry Date</label>
+                    <input type="month" id="expiry-date" name="expiry-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" required maxlength="3" pattern="\d{3}" title="Enter a valid 3-digit CVV">
+                </div>
+                <button type="submit">Pay Now</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
